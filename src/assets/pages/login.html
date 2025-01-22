@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Pixel Cloud</title>
+		<link href="../css/login.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<!-- header -->
+	<header>
+		<h2 class='header-logo'>PIXEL CLOUD</h2>
+		<a href = '../../index.html' class='header-link'>Home</a>
+	</header>
+    <!-- body -->
+    <body>
+        <main>
+            <section id = 'login' class ='container'>
+                <h1 id = 'teste'></h1>
+                <h1>Login</h1>
+                <div class = form>
+                    <form method = 'post' action = ''>
+                        <input type = 'text' placeholder = "digite seu nome de usuário" > <br> <br>
+                        <p id = 'err1'></p> <br>
+                        <input type = 'password' placeholder = "digite sua senha"> <br> <br>
+                        <p id = 'err2'></p> <br>
+                      <button type = 'submit'>ENTRAR NA CONTA</button> <br> <br> <br> <br>
+                    </form>
+                </div>
+            </section>
+
+            <section id = 'cadastro' class ='container'>
+                <h1>Cadastro</h1>
+                <div class = form>
+                    <form method = 'post' action = ''>
+                        <input id = 'nome_u' type = 'text' placeholder = "digite seu nome de usuário" > <br> <br>
+                        <p id = 'err3'></p> <br>
+                        <input id = 'nome' type = 'text' placeholder = "digite seu nome" > <br> <br>
+                        <p id = 'err4'></p> <br>
+                        <input id = 'datanasc' type = 'date' placeholder = "data nasc"> <br> <br>
+                        <p id = 'err5'></p> <br>
+                        <input id = 'telefone' type = 'text' placeholder = "digite seu telefone" > <br> <br>
+                        <p id = 'err6'></p> <br>
+                        <input id = 'email' type = 'text' placeholder = "digite seu E-MAIL" > <br> <br>
+                        <p id = 'err7'></p> <br>
+                        <input type = 'password' placeholder = "digite uma senha" maxlength = '6' > <br> <br>
+                        <p id = 'err8'></p> <br>
+                        <input id = 'senha' type = 'password' placeholder = "confirme sua senha" maxlength = '6' ><br> <br>
+                        <p id = 'err9'></p> <br>
+                        <!-- <button type = 'submit'>CRIAR CONTA</button> -->
+                    </form>
+                    <button id = 'cadastrar'>CADASTRAR</button>
+                </div>
+            </section>
+        </main>
+
+    <script src = '../js/login.js'></script>
+    </body>
+</html>

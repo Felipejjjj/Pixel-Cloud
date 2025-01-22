@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/profile.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+    <script>
+        let user = JSON.parse(localStorage.getItem('user'))
+        console.log(user)
+
+        function page(){
+            let page = 
+            `
+                <header>
+                    <h2 class='header-logo'>PIXEL CLOUD</h2>
+                    <a href = '../../index.html' class='header-link'>Home</a>
+                </header>
+
+                <main>
+                    <section class ='container'>
+                        <h1>Meu Perfil</h1>
+                        <div id = 'data'>
+                            <article>
+                                <img src = '/images/others/icon.png'>
+                                <h2>${user.nome_usuario}</h2>
+                            </article>
+                            <br> <br>
+                            <article>
+                                <h2>dados pessoais:</h2>
+                                <h3>nome: ${user.nome} </h3>
+                                <h3>email: ${user.email}</h3>
+                                <h3>telefone: ${user.telefone}</h3>
+                                <h2>favoritos:</h2>
+                                <h3>${user.favoritos}</h3>
+                            <article>
+                        </div>
+                    </section>
+                </main>
+            `
+            return page
+        }
+
+        document.querySelector('body').insertAdjacentHTML('beforeend', page())
+
+    </script>
+</body>
+</html>
