@@ -1,3 +1,17 @@
+* {
+  color: white;
+}
+
+body{
+  background-color: rgb(49, 48, 48);
+}
+
+
 h1 {
-  color: red;
+  font-family: impact;
+  font-size: 2rem;
+}
+
+footer {
+  align-items: end;
 }
