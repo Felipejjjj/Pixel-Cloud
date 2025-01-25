@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
+
 * {
   color: white;
 }
@@ -6,12 +8,94 @@ body{
   background-color: rgb(49, 48, 48);
 }
 
-
-h1 {
-  font-family: impact;
+/* ----header---- */
+header h1 {
+  font-family: sarpanch;
   font-size: 2rem;
 }
 
+/* ----capa---- */
+#capa{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background: rgb(28,0,47);
+  background: linear-gradient(180deg, rgba(24,0,40,1) 0%, rgba(72,0,121,1) 50%, rgba(124,0,207,1) 100%);
+  height: 93vh;
+}
+
+#capa div{
+  text-align: center;
+}
+
+#capa h1, h2{
+  font-family: sarpanch;
+}
+
+#capa h1{
+  font-size: 6rem;
+}
+
+#capa h2{
+  font-size: 1.3rem;
+}
+
+#capa img{
+  height: 25rem;
+}
+
+/* ----jogos---- */
+.article{
+  text-align: center;
+}
+
+.article h1{
+  font-family: sarpanch;
+  font-size: 3.5rem;
+}
+
+#games-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  
+  width: 60vw;
+  margin: 0 auto;
+}
+
+/* ----notícias---- */
+#news-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.2rem;
+  align-items: center;
+  
+  width: 60vw;
+  margin: 0 auto;
+}
+
+/* ----mapa---- */
+#mapa{
+  margin: 0 auto
+}
+
+/* ----footer---- */
 footer {
   align-items: end;
+}
+
+/* ----responsividade---- */
+@media(max-width: 700px) {
+  #capa img{
+    height: 15rem;
+  }
+}
+
+@media(max-width: 505px) {
+  #capa img{
+    display:none
+  }
 }

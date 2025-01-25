@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pixel Cloud</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="bg-black">
@@ -19,11 +21,11 @@
               <nav aria-label="Global" class="hidden md:block">
                 <ul class="flex items-center gap-6 text-sm">
                   <li>
-                    <a class="text-white-500 transition hover:text-gray-500/75" href="#"> Jogos </a>
+                    <a class="text-white-500 transition hover:text-gray-500/75" href="#games"> Jogos </a>
                   </li>
       
                   <li>
-                    <a class="text-white-500 transition hover:text-gray-500/75" href="#"> Notícias </a>
+                    <a class="text-white-500 transition hover:text-gray-500/75" href="#news"> Notícias </a>
                   </li>
       
                   <li>
@@ -36,7 +38,7 @@
                 <div class="sm:flex sm:gap-4">
                   <a
                     class="rounded-md bg-purple-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-                    href="#"
+                    href="src/assets/pages/login.html"
                   >
                     Login
                   </a>
@@ -64,9 +66,224 @@
           </div>
         </div>
     </header>
+    
+    <main>
+
+      <article id = 'capa'>
+        <div>
+          <h1>Pixel Cloud</h1>
+          <h2>A melhor plataforma de cátalogo de jogos eletrônicos do mercado</h2>
+        </div>
+        <img src = 'controle3.png'>
+      </article>
+
+      <article class = 'article' id = 'games'>
+        <h1>JOGOS</h1>
+        <hr> <br>
+        <div id = 'games-container'>
+
+          <a class="group relative block overflow-hidden classeteste" style="width: 25rem; border-radius: 10px;">
+            <img src= "images/games/Terraria.png" alt="" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/>
+            <!-- <img src= ${jogo.img} alt="${jogo.nome}" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/> -->
+          
+            <div class="bg-black p-6">
+              <h3 class="mt-4 text-lg font-medium text-white-900">${jogo.nome}</h3> <br><br>
+              <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= 'src/assets/pages/login.html' "> ver jogo </button>
+              <!-- <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= ${jogo.link} "> ver jogo </button> -->
+            </div>
+          </a>
+    
+          <a class="group relative block overflow-hidden classeteste" style="width: 25rem; border-radius: 10px;">
+            <img src= "images/games/Terraria.png" alt="" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/>
+            <!-- <img src= ${jogo.img} alt="${jogo.nome}" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/> -->
+          
+            <div class="bg-black p-6">
+              <h3 class="mt-4 text-lg font-medium text-white-900">${jogo.nome}</h3> <br><br>
+              <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= 'src/assets/pages/login.html' "> ver jogo </button>
+              <!-- <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= ${jogo.link} "> ver jogo </button> -->
+            </div>
+          </a>
+    
+          <a class="group relative block overflow-hidden classeteste" style="width: 25rem; border-radius: 10px;">
+            <img src= "images/games/Terraria.png" alt="" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/>
+            <!-- <img src= ${jogo.img} alt="${jogo.nome}" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/> -->
+          
+            <div class="bg-black p-6">
+              <h3 class="mt-4 text-lg font-medium text-white-900">${jogo.nome}</h3> <br><br>
+              <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= 'src/assets/pages/login.html' "> ver jogo </button>
+              <!-- <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= ${jogo.link} "> ver jogo </button> -->
+            </div>
+          </a>
+    
+          <a class="group relative block overflow-hidden classeteste" style="width: 25rem; border-radius: 10px;">
+            <img src= "images/games/Terraria.png" alt="" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/>
+            <!-- <img src= ${jogo.img} alt="${jogo.nome}" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/> -->
+          
+            <div class="bg-black p-6">
+              <h3 class="mt-4 text-lg font-medium text-white-900">${jogo.nome}</h3> <br><br>
+              <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= 'src/assets/pages/login.html' "> ver jogo </button>
+              <!-- <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= ${jogo.link} "> ver jogo </button> -->
+            </div>
+          </a>
+    
+          <a class="group relative block overflow-hidden classeteste" style="width: 25rem; border-radius: 10px;">
+            <img src= "images/games/Terraria.png" alt="" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/>
+            <!-- <img src= ${jogo.img} alt="${jogo.nome}" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/> -->
+          
+            <div class="bg-black p-6">
+              <h3 class="mt-4 text-lg font-medium text-white-900">${jogo.nome}</h3> <br><br>
+              <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= 'src/assets/pages/login.html' "> ver jogo </button>
+              <!-- <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= ${jogo.link} "> ver jogo </button> -->
+            </div>
+          </a>
+    
+          <a class="group relative block overflow-hidden classeteste" style="width: 25rem; border-radius: 10px;">
+            <img src= "images/games/Terraria.png" alt="" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/>
+            <!-- <img src= ${jogo.img} alt="${jogo.nome}" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/> -->
+          
+            <div class="bg-black p-6">
+              <h3 class="mt-4 text-lg font-medium text-white-900">${jogo.nome}</h3> <br><br>
+              <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= 'src/assets/pages/login.html' "> ver jogo </button>
+              <!-- <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= ${jogo.link} "> ver jogo </button> -->
+            </div>
+          </a>
+    
+          <a class="group relative block overflow-hidden classeteste" style="width: 25rem; border-radius: 10px;">
+            <img src= "images/games/Terraria.png" alt="" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/>
+            <!-- <img src= ${jogo.img} alt="${jogo.nome}" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/> -->
+          
+            <div class="bg-black p-6">
+              <h3 class="mt-4 text-lg font-medium text-white-900">${jogo.nome}</h3> <br><br>
+              <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= 'src/assets/pages/login.html' "> ver jogo </button>
+              <!-- <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= ${jogo.link} "> ver jogo </button> -->
+            </div>
+          </a>
+    
+          <a class="group relative block overflow-hidden classeteste" style="width: 25rem; border-radius: 10px;">
+            <img src= "images/games/Terraria.png" alt="" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/>
+            <!-- <img src= ${jogo.img} alt="${jogo.nome}" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/> -->
+          
+            <div class="bg-black p-6">
+              <h3 class="mt-4 text-lg font-medium text-white-900">${jogo.nome}</h3> <br><br>
+              <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= 'src/assets/pages/login.html' "> ver jogo </button>
+              <!-- <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= ${jogo.link} "> ver jogo </button> -->
+            </div>
+          </a>
+    
+          <a class="group relative block overflow-hidden classeteste" style="width: 25rem; border-radius: 10px;">
+            <img src= "images/games/Terraria.png" alt="" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/>
+            <!-- <img src= ${jogo.img} alt="${jogo.nome}" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/> -->
+          
+            <div class="bg-black p-6">
+              <h3 class="mt-4 text-lg font-medium text-white-900">${jogo.nome}</h3> <br><br>
+              <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= 'src/assets/pages/login.html' "> ver jogo </button>
+              <!-- <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= ${jogo.link} "> ver jogo </button> -->
+            </div>
+          </a>
+    
+          <a class="group relative block overflow-hidden classeteste" style="width: 25rem; border-radius: 10px;">
+            <img src= "images/games/Terraria.png" alt="" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/>
+            <!-- <img src= ${jogo.img} alt="${jogo.nome}" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/> -->
+          
+            <div class="bg-black p-6">
+              <h3 class="mt-4 text-lg font-medium text-white-900">${jogo.nome}</h3> <br><br>
+              <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= 'src/assets/pages/login.html' "> ver jogo </button>
+              <!-- <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= ${jogo.link} "> ver jogo </button> -->
+            </div>
+          </a>
+        
+        </div>
       
+      </article>
       
-    <h1>AAAA</h1>
+      <br> <br> <br>
+
+      <article class = 'article' id = 'news'>
+        <h1>últimas notícias</h1>
+        <hr> <br>
+        <div id = 'news-container'>
+
+          <div class="card lg:card-side bg-black shadow-xl" style="width: 50rem;">
+            <figure>
+              <img src="images/news/GTAV.png" alt="Album"> 
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" style="width: 15rem; font-size: 1.5rem;">Rockstar Games Revela GTA 6 com Ambientação Inspirada em Vice City e Los Santos</h2> <br>
+              <p style="width: 15rem; font-size: 1rem;">Nova edição promete ser a maior de todas, com mapa expansivo e novas mecânicas de jogabilidade.</p> <br>
+              <div class="card-actions justify-end">
+                <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= 'src/assets/pages/login.html' ">saiba mais</button>
+              </div>
+            </div>
+          </div>
+      
+          <br> <br>
+      
+          <div class="card lg:card-side bg-black shadow-xl" style="width: 50rem;">
+            <figure>
+              <img src="images/news/Overwatch.png" alt="Album"> 
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" style="width: 15rem; font-size: 1.5rem;">Blizzard Anuncia Novo Evento de Temporada e Modo PvE Exclusivo para Overwatch 2</h2> <br>
+              <p style="width: 15rem; font-size: 1rem;">“Operação Aurora” trará missões cooperativas e recompensas especiais por tempo limitado.</p> <br>
+              <div class="card-actions justify-end">
+                <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= 'src/assets/pages/login.html' ">saiba mais</button>
+              </div>
+            </div>
+          </div>
+      
+          <br> <br>
+      
+          <div class="card lg:card-side bg-black shadow-xl" style="width: 50rem;">
+            <figure>
+              <img src="images/news/Valorant.png" alt="Album"> 
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" style="width: 15rem; font-size: 1.5rem;">Valorant Lança Modo de Jogo Inédito “Missão Tempestade”</h2> <br>
+              <p style="width: 15rem; font-size: 1rem;">Atualização traz missões cooperativas, narrativa expandida e novos mapas ambientados em locais exóticos.</p> <br>
+              <div class="card-actions justify-end">
+                <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= 'src/assets/pages/login.html' ">saiba mais</button>
+              </div>
+            </div>
+          </div>
+      
+          <br> <br>
+      
+          <!-- <div class="card lg:card-side bg-black shadow-xl" style="width: 50rem;">
+            <figure>
+              <img src=${news.img} alt="${news.name}"> 
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" style="width: 15rem; font-size: 1.5rem;"> ${news.titulo} </h2> <br>
+              <p style="width: 15rem; font-size: 1rem;"> ${news.subtitulo} </p> <br>
+              <div class="card-actions justify-end">
+                <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= ${news.link} ">saiba mais</button>
+              </div>
+            </div>
+          </div>
+      
+          <br> <br> -->
+
+        </div>
+      </article>
+
+      <article class = 'article'>
+        <h1>NOSSA LOCALIZAÇÃO</h1>
+        <hr> <br>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2286.9716686206552!2d-34.87395533916812!3d-7.1358094149308835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB%20-%20Campus%20Jo%C3%A3o%20Pessoa!5e0!3m2!1spt-BR!2sbr!4v1724684941616!5m2!1spt-BR!2sbr"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" id = 'mapa'></iframe>
+      </article>
+
+
+
+    </main>
+    
+
+
+
+
+    <br> <br> <br>
 
     <footer class="bg-black">
         <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
