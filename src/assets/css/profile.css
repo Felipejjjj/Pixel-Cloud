@@ -25,7 +25,7 @@ body {
 }
 
 /* ----header---- */
-header {
+/* header {
 	background-color: black;
 	color: white;
 	display: flex;
@@ -50,12 +50,18 @@ header {
 .header-link:hover {
 	color: black;
 	background-color: white;
-}
+} */
+
+header h1 {
+    font-family: sarpanch;
+    font-size: 2rem;
+  }
 
 /* ----body---- */
 main {
     height: 90vh;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -93,10 +99,9 @@ article:first-of-type {
 }
 
 .container h2 {
-    font-family: "Roboto";
+    font-family: "Sarpanch";
 	color: white;
 	font-size: 2rem;
-    margin-left: 1rem;
 }
 
 .container h3 {
@@ -104,6 +109,21 @@ article:first-of-type {
 	color: white;
     margin-left: 1rem;
 }
+
+#games-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    
+    /* width: 60vw; */
+    /* margin: 0 auto; */
+  }
+
+#games-container h1{
+    font-family: sarpanch;
+    font-size: 3.5rem;
+  }
 
 
 /* ----responsive---- */

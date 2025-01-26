@@ -25,7 +25,7 @@ body {
 }
 
 /* ----header---- */
-header {
+/* header {
 	background-color: black;
 	color: white;
 	display: flex;
@@ -50,7 +50,12 @@ header {
 .header-link:hover {
 	color: black;
 	background-color: white;
-}
+} */
+
+header h1 {
+    font-family: sarpanch;
+    font-size: 2rem;
+  }
 
 /* ----body---- */
 main {
@@ -61,9 +66,8 @@ main {
 }
 
 .container {
-    height: 45rem;
+    height: 50rem;
     width: 30%;
-
 }
 
 .container h1 {
@@ -113,12 +117,8 @@ main {
     color: red;
 }
 
-.form button:first-of-type{
-    background: linear-gradient(135deg, #000000, #00e67a);
-}
-
-.form button:last-child{
-    background: linear-gradient(135deg, #000000, #a201ec);
+.form button{
+    background-color: black;
 }
 
 .form button {

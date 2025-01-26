@@ -4,14 +4,38 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<title>Pixel Cloud</title>
-		<link href="../css/login.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!-- <link href="../css/login.css" rel="stylesheet" type="text/css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.tailwindcss.com"></script>
 	</head>
 	<!-- header -->
-	<header>
+	<!-- <header>
 		<h2 class='header-logo'>PIXEL CLOUD</h2>
 		<a href = '../../index.html' class='header-link'>Home</a>
-	</header>
+	</header> -->
+    <header class="bg-black">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <div class="flex h-16 items-center justify-between">
+            <div class="flex-1 md:flex md:items-center md:gap-12">
+              <h1>PIXEL CLOUD</h1>
+            </div>
+      
+            <div class="md:flex md:items-center md:gap-12">
+              <nav aria-label="Global" class="hidden md:block">
+                <ul class="flex items-center gap-6 text-sm">
+                  <li>
+                    <a class="text-white-500 transition hover:text-gray-500/75" href="../../../index.html"> Início </a>
+                  </li>
+      
+                  <li>
+                    <a class="text-white-500 transition hover:text-gray-500/75" href="#"> Sobre Nós </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+    </header>
     <!-- body -->
     <body>
         <main>
@@ -20,40 +44,42 @@
                 <h1>Login</h1>
                 <div class = form>
                     <form method = 'post' action = ''>
-                        <input type = 'text' placeholder = "digite seu nome de usuário" > <br> <br>
+                        <input id = 'login_nome_usuario' type = 'text' placeholder = "digite seu nome de usuário" > 
                         <p id = 'err1'></p> <br>
-                        <input type = 'password' placeholder = "digite sua senha"> <br> <br>
+                        <input id = 'login_senha' type = 'password' placeholder = "digite sua senha"> 
                         <p id = 'err2'></p> <br>
-                      <button type = 'submit'>ENTRAR NA CONTA</button> <br> <br> <br> <br>
                     </form>
+                    <button id = 'logar'>ENTRAR NA CONTA</button>
+                    <p id = 'err_login'></p> 
                 </div>
             </section>
 
             <section id = 'cadastro' class ='container'>
-                <h1>Cadastro</h1>
+                <h1>Cadastro</h1> <br> <br> <br> <br>
                 <div class = form>
                     <form method = 'post' action = ''>
-                        <input id = 'nome_u' type = 'text' placeholder = "digite seu nome de usuário" > <br> <br>
+                        <input id = 'nome_u' type = 'text' placeholder = "digite seu nome de usuário" > 
                         <p id = 'err3'></p> <br>
-                        <input id = 'nome' type = 'text' placeholder = "digite seu nome" > <br> <br>
+                        <input id = 'nome' type = 'text' placeholder = "digite seu nome" > 
                         <p id = 'err4'></p> <br>
-                        <input id = 'datanasc' type = 'date' placeholder = "data nasc"> <br> <br>
+                        <input id = 'datanasc' type = 'date' placeholder = "data nasc"> 
                         <p id = 'err5'></p> <br>
-                        <input id = 'telefone' type = 'text' placeholder = "digite seu telefone" > <br> <br>
+                        <input id = 'telefone' type = 'text' placeholder = "digite seu telefone" > 
                         <p id = 'err6'></p> <br>
-                        <input id = 'email' type = 'text' placeholder = "digite seu E-MAIL" > <br> <br>
+                        <input id = 'email' type = 'text' placeholder = "digite seu E-MAIL" > 
                         <p id = 'err7'></p> <br>
-                        <input type = 'password' placeholder = "digite uma senha" maxlength = '6' > <br> <br>
+                        <input type = 'password' placeholder = "digite uma senha" maxlength = '6' > 
                         <p id = 'err8'></p> <br>
-                        <input id = 'senha' type = 'password' placeholder = "confirme sua senha" maxlength = '6' ><br> <br>
-                        <p id = 'err9'></p> <br>
+                        <input id = 'senha' type = 'password' placeholder = "confirme sua senha" maxlength = '6' >
+                        <p id = 'err9'></p> <br> 
                         <!-- <button type = 'submit'>CRIAR CONTA</button> -->
                     </form>
                     <button id = 'cadastrar'>CADASTRAR</button>
                 </div>
             </section>
         </main>
-
+    
+    <link href="../css/login.css" rel="stylesheet" type="text/css">
     <script src = '../js/login.js'></script>
     </body>
 </html>

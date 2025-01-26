@@ -77,6 +77,10 @@ header h1 {
   margin: 0 auto;
 }
 
+.news_card{
+  width: 50rem;
+}
+
 /* ----mapa---- */
 #mapa{
   margin: 0 auto
@@ -88,6 +92,13 @@ footer {
 }
 
 /* ----responsividade---- */
+@media(max-width: 1050px) {
+  .news_card{
+    width: fit-content;
+  }
+}
+
+
 @media(max-width: 700px) {
   #capa img{
     height: 15rem;
@@ -96,6 +107,21 @@ footer {
 
 @media(max-width: 505px) {
   #capa img{
-    display:none
+    display:none;
+  }
+
+  .article h1{
+    font-size: 2rem;
+  }
+
+  iframe{
+    height: 10rem;
+    width: 10rem;
   }
 }
+
+/* @media(max-width: 350px) {
+  .news_card h2, p{
+    font-size: 1px;
+  }
+} */
