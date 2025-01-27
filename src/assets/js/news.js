@@ -34,13 +34,13 @@ function page(titulo, subtitulo, autor, texto){
         <hr>
         <h3>escrito por:</h3>
         <h4>${autor}</h4>
-        <article id='noticia-texto'>
+        <article id='noticia-texto'> 
             <p>
                 ${texto}
             </p>
         </article>
     </section>
-</main>
+</main> <br>
 
 <footer class="bg-black">
     <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">

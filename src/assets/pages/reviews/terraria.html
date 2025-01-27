@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="..\..\css\review.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
 <body>
     <script type="module">
         import page from '../../js/reviews.js'
         import * as lib from '../../js/lib/lib.js'
-        let imagem = 'a'
+        let imagem = '/images/games/Terraria.png'
         let nome = 'Terraria'
         let nome_autor = 'ariel'
         let texto = 
@@ -24,19 +26,14 @@
                 <h2>Multijogador e Comunidade</h2>
 				<p>"Terraria" brilha ainda mais no modo multijogador, onde a cooperação e a competição com amigos podem transformar a experiência de jogo. A possibilidade de explorar, construir e lutar juntos adiciona uma camada de diversão e complexidade que muitos jogadores acham irresistível. A comunidade de "Terraria" é vibrante e ativa, com uma vasta quantidade de mods, mapas personalizados e recursos compartilhados que enriquecem ainda mais a experiência de jogo. O suporte contínuo para mods e o envolvimento da comunidade ajudam a manter o jogo relevante e estimulante ao longo dos anos.</p>
 			</section>
-			<section class="autor">
-				<div class="text">
-					<h3>Sobre o Autor</h3>
-					<p>Conhecido por suas histórias emocionantes e profundas,o último sobrevivente de Atlântida Ariel Souza é um autor portugues que se destaca no gênero de ficção contemporânea. Seus romances exploram questões de identidade, política e a busca por propósito em um mundo em constante mudança. Com uma narrativa sensível e personagens complexos. Ariel combina introspecção e crítica social de maneira a ressoar profundamente com seus leitores. </p>
-				</div>
         `
         let autor =
         `
         Conhecido por suas histórias emocionantes e profundas,o último sobrevivente de Atlântida Ariel Souza é um autor portugues que se destaca no gênero de ficção contemporânea. Seus romances exploram questões de identidade, política e a busca por propósito em um mundo em constante mudança. Com uma narrativa sensível e personagens complexos. Ariel combina introspecção e crítica social de maneira a ressoar profundamente com seus leitores.
         `
 
-        document.querySelector('body').insertAdjacentHTML('beforeend', page(imagem, nome, nome_autor, texto))
-        lib.header_link()
+        document.querySelector('body').insertAdjacentHTML('beforeend', page(imagem, nome, nome_autor, texto, autor))
+        lib.header_link('../login.html', '../profile.html')
     </script>
 </body>
 </html>

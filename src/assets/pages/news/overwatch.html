@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="..\..\css\news.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="module">
+        import page from '../../js/news.js'
+        import * as lib from '../../js/lib/lib.js'
+        
+
+        let titulo = 'Blizzard Anuncia Novo Evento de Temporada e Modo PvE Exclusivo para Overwatch 2'
+        let subtitulo = 'Evento “Operação Aurora” trará missões cooperativas e recompensas especiais por tempo limitado.'
+        let autor = 'Leonardo Da Vinci'
+        let texto =
+        `
+         A Blizzard Entertainment revelou hoje detalhes emocionantes sobre o próximo evento sazonal de Overwatch 2, intitulado “Operação Aurora”. O evento trará um modo de jogo PvE (jogador contra ambiente) completamente novo, onde os jogadores poderão formar equipes para enfrentar desafios em missões cooperativas, além de oferecer recompensas exclusivas por tempo limitado. Com lançamento previsto para o início do próximo mês, o evento busca renovar o interesse da comunidade e atrair novos jogadores com conteúdo inovador e uma narrativa envolvente. “Operação Aurora” será ambientada nas montanhas geladas de uma nova área, onde a Overwatch foi chamada para investigar uma série de anomalias climáticas inexplicáveis. Jogadores formarão equipes de até quatro heróis para enfrentar ondas de inimigos robóticos que estão tentando capturar um poderoso artefato. A missão exigirá cooperação e estratégia, com cada jogador assumindo papéis específicos para sobreviver aos ataques e completar os objetivos. O modo PvE foi projetado para ser desafiador, com diferentes níveis de dificuldade para acomodar tanto jogadores casuais quanto veteranos em busca de uma experiência mais intensa. <br> <br>
+
+         O evento também introduzirá novas mecânicas de jogo, como efeitos climáticos dinâmicos, que afetarão a visibilidade e a mobilidade durante as missões. Nevascas e tempestades de gelo serão uma constante ameaça, exigindo que os jogadores ajustem suas estratégias e usem o ambiente a seu favor para progredir. Além disso, zonas seguras e pontos de aquecimento estarão espalhados pelo mapa, onde as equipes podem se reagrupar e curar antes de continuar com a missão. A Blizzard promete que “Operação Aurora” não será apenas um modo de jogo temporário, mas também trará uma história rica que expandirá o universo de Overwatch 2. Cinemáticas especiais e diálogos durante as missões revelarão mais sobre o passado dos heróis, as motivações dos vilões e as complexas interações entre as facções. Esse foco na narrativa visa aprofundar o envolvimento dos jogadores com o mundo de Overwatch, oferecendo uma experiência que vai além das tradicionais batalhas PvP. Para incentivar a participação no evento, a Blizzard está introduzindo uma série de recompensas exclusivas que poderão ser desbloqueadas ao completar as missões de “Operação Aurora”. Entre as recompensas, estão skins temáticas, emotes, sprays e ícones de jogador inspirados no ambiente gelado do evento. Além disso, os jogadores que concluírem os desafios em níveis de dificuldade mais altos receberão troféus especiais e conquistas que exibem seu nível de habilidade e dedicação. <br> <br>
+
+         A expectativa em torno de “Operação Aurora” é alta, com a comunidade de jogadores ansiosa para experimentar o novo conteúdo e explorar as missões cooperativas oferecidas pelo evento. A Blizzard já confirmou que “Operação Aurora” é apenas o início de uma série de eventos sazonais planejados para Overwatch 2, cada um trazendo novos modos de jogo, histórias e recompensas únicas. Com o compromisso contínuo de entregar experiências inovadoras e envolventes, a Blizzard espera que esses eventos sazonais ajudem a manter Overwatch 2 no topo dos jogos de tiro em equipe e a fortalecer sua base de jogadores ao longo do ano.
+        `
+
+        document.querySelector('body').insertAdjacentHTML('beforeend', page(titulo, subtitulo, autor, texto))
+        lib.header_link('../login.html', '../profile.html')
+    </script>
+</body>
+
+</html>

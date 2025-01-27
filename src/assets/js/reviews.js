@@ -1,4 +1,5 @@
 function page(imagem, nome, nome_autor, texto, autor) {
+    let review = 
     `
     <header class="bg-black">
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -125,6 +126,7 @@ function page(imagem, nome, nome_autor, texto, autor) {
     </div>
 </footer>
     `
+    return review
 }
 
 export default page

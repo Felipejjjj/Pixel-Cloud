@@ -154,106 +154,12 @@ main {
 
 
 /* ----responsividade----  */
-
-@media (max-width: 1000px) {
-  #reviews {
-    height: auto;
-  }
-  #reviews-container {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    flex-wrap: wrap;
-  }
-
-  #reviews-container div {
-    height: 100px;
-  }
-  #populares {
-    margin-top: 10px;
+@media (max-width: 350px) {
+  #noticia h1{
+    font-size: 1rem;
   }
 }
 
-@media (max-width: 900px) {
-  /* Ajuste para o cabeçalho */
-  header {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding: 10px;
-  }
-  .header-logo {
-    font-size: 35px;
-    padding-left: 0;
-  }
-  .header-link, .header-link2 {
-    font-size: 20px;
-    margin: 5px 0;
-  }
-  /* Ajuste para a capa */
-  #capa {
-    height: auto;
-    padding: 20px;
-    text-align: center;
-  }
-  #capa-logo {
-    font-size: 80px;
-    margin-left: 0;
-  }
-  #capa-text {
-    font-size: 30px;
-    margin-left: 0;
-  }
-  #capa-img {
-    width: 300px;
-    height: 300px;
-    margin: 20px auto;
-  }
-  /* Ajuste para a seção de reviews */
-  #reviews {
-    height: auto;
-    padding: 20px;
-  }
-  #reviews-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 10px;
-    width: 100%;
-  }
-  /* Ajuste para notícias e populares */
-  #popular-container {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-  }
-  .popular-image {
-    width: 100%;
-    height: auto;
-  }
-  .popular-title, .popular-subtitle {
-    width: 100%;
-  }
-  .popular-button {
-    width: 100%;
-  }
-  /* Ajuste para o mapa */
-  #maps article iframe {
-    width: 100%;
-    height: auto;
-  }
-  /* Ajuste para o footer */
-  footer {
-    align-items: center;
-    text-align: center;
-  }
-  #footer-logo {
-    font-size: 60px;
-  }
-  #footer-text {
-    font-size: 18px;
-  }
-}
 
 @media (max-width: 768px) {
   header {
