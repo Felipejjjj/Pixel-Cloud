@@ -168,6 +168,16 @@
               <!-- <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= "${jogo.link}" "> ver jogo </button> -->
             </div>
           </a>
+
+          <!-- card dinâmico -->
+          <a class="group relative block overflow-hidden classeteste" style="width: 25rem; border-radius: 10px;">
+            <img src= "${jogo.img}" alt="${jogo.nome}" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/>
+          
+            <div class="bg-black p-6">
+              <h3 class="mt-4 text-lg font-medium text-white-900">${jogo.nome}</h3> <br><br>
+              <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= '${jogo.link}' "> ver jogo </button>
+            </div>
+          </a>
         
         </div>
       
@@ -224,8 +234,9 @@
           </div>
       
           <br> <br>
-      
-          <!-- <div class="card lg:card-side bg-black shadow-xl" style="width: 50rem;">
+          
+          <!-- card dinâmico -->
+          <div class="card lg:card-side bg-black shadow-xl news_card" style="width: 50rem;">
             <figure>
               <img src=${news.img} alt="${news.name}"> 
             </figure>
@@ -233,12 +244,12 @@
               <h2 class="card-title" style="width: 15rem; font-size: 1.5rem;"> ${news.titulo} </h2> <br>
               <p style="width: 15rem; font-size: 1rem;"> ${news.subtitulo} </p> <br>
               <div class="card-actions justify-end">
-                <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= ${news.link} ">saiba mais</button>
+                <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= '${news.link}' ">saiba mais</button>
               </div>
             </div>
           </div>
       
-          <br> <br> -->
+          <br> <br>
 
         </div>
       </article>
