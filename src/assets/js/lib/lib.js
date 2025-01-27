@@ -28,7 +28,7 @@ export function news_card(news){
             <h2 class="card-title" style="width: 15rem; font-size: 1.5rem;"> ${news.titulo} </h2> <br>
             <p style="width: 15rem; font-size: 1rem;"> ${news.subtitulo} </p> <br>
             <div class="card-actions justify-end">
-            <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" href="${news.link}">saiba mais</button>
+            <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick='window.location.href= "${news.link}"'>saiba mais</button>
             </div>
         </div>
         </div>
