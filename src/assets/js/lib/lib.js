@@ -37,3 +37,20 @@ export function news_card(news){
     `
     return card
 }
+
+
+export function games_card(review){
+    let game =
+
+    `
+    <a class="group relative block overflow-hidden classeteste" style="width: 25rem; border-radius: 10px;">
+            <img src= "${review.img}" alt="${review.nome}" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"/>
+          
+            <div class="bg-black p-6">
+              <h3 class="mt-4 text-lg font-medium text-white-900">${review.nome}</h3> <br><br>
+              <button class="block w-full rounded bg-purple-600 p-4 text-sm font-medium transition hover:scale-105" onclick="window.location.href= '${review.link}' "> ver jogo </button>
+            </div>
+          </a>
+    `
+    return game
+}

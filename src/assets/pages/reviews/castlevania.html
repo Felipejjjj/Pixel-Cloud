@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="..\..\css\review.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Castlevania</title>
+</head>
+<body>
+    <script type="module">
+        import page from '../../js/reviews.js'
+        import * as lib from '../../js/lib/lib.js'
+        let imagem = '/images/games/Castlevania.png'
+        let nome = 'Castlevania'
+        let nome_autor = 'Felipe Oliveira'
+        let texto = 
+        `
+        <h2>Design de Mundo e Atmosfera</h2>
+				<p>"Castlevania: Symphony of the Night" é amplamente aclamado por seu design de mundo inovador e atmosférico. A exploração do castelo de Drácula é um destaque absoluto, com uma combinação perfeita de ambientes góticos e sombrios, cheios de detalhes visuais que criam uma sensação de mistério e aventura. O castelo é vasto e interconectado, oferecendo uma experiência de exploração rica e imersiva. A atmosfera é acentuada pela trilha sonora icônica e pela ambientação sonora, que contribuem para um sentimento de grandiosidade e tensão constante. Cada área do castelo tem um estilo único, mantendo a experiência visualmente diversificada e intrigante.</p>
+				
+                <h2>Jogabilidade e Sistema de Progressão</h2>
+				<p>A gameplay de "Symphony of the Night" é uma mistura elegante de ação, plataforma e RPG. A mecânica de combate é fluida e responsiva, permitindo aos jogadores uma grande variedade de ataques e habilidades à medida que desbloqueiam novas armas e equipamentos. O sistema de progressão é baseado na coleta de itens e habilidades que permitem explorar novas áreas do castelo. A ideia de "Metroidvania", com a exploração de áreas desbloqueadas através de novos poderes, é implementada de forma excepcional, mantendo o jogo fresco e desafiador. A possibilidade de personalizar o personagem e o sistema de níveis enriquecem ainda mais a experiência, oferecendo uma sensação de crescimento e conquista.</p>
+				
+                <h2>Narrativa e Personagens</h2>
+				<p>Embora "Symphony of the Night" não seja particularmente conhecido por sua narrativa complexa, ele oferece uma história envolvente e adequada ao estilo da série. A trama segue Alucard, o vampiro herói, em sua missão para derrotar Drácula e salvar o mundo. A história é contada de forma sutil, através de diálogos e encontros com NPCs, permitindo que os jogadores descubram a narrativa enquanto exploram. A riqueza do lore da série é explorada através dos ambientes e dos inimigos que enfrentamos. O desenvolvimento dos personagens, especialmente Alucard, é cativante e contribui para a atmosfera geral do jogo.</p>
+			</section>
+        `
+        let autor =
+        `
+        Com um talento para a fantasia épica, Felipe Oliveira, vindo do mundo de crepúsculo cria mundos complexos e mágicos que cativam seus leitores. Seus livros são conhecidos por suas intrincadas construções de universo e personagens heroicos, além de uma rica tapeçaria de mitologia e aventura.
+        `
+
+        document.querySelector('body').insertAdjacentHTML('beforeend', page(imagem, nome, nome_autor, texto, autor))
+        lib.header_link('../login.html', '../profile.html')
+    </script>
+</body>
+</html>
