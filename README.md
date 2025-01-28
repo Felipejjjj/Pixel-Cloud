@@ -1,4 +1,4 @@
-# Pixel Cloud V0.4.5: "Marcus Aurelius"
+# Pixel Cloud V1.0: "Commodus"
 
 **Murilo Maciel Rodrigues**  
 **Felipe Oliveira Raimundo**  
@@ -8,7 +8,7 @@
 ## **Etapa 1:**
 - Programação funcional ✅
 - Tratamento de Eventos ✅
-- Estrutura com ESM ❌
+- Estrutura com ESM ✅
 - Pacotes com ViteJS ✅
 - Páginas dinâmicas com dados no LocalStorage ✅
 
