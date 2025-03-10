@@ -94,7 +94,7 @@ footer {
 /* ----responsividade---- */
 @media(max-width: 1050px) {
   .news_card{
-    width: fit-content;
+    width: fit-content!important;
   }
 }
 
