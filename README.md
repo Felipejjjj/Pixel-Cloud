@@ -16,5 +16,5 @@
 - Regexp ❌
 - Requisição Assíncrona ❌
 - Back-end com DBaaS (Supabase) ➖
-- Componentes ReactJS ❌
+- Componentes ReactJS ➖
 - Gerência de estado entre Componentes ❌
