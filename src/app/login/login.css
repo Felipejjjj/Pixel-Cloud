@@ -24,34 +24,6 @@ body {
 	margin-right: 0px;
 }
 
-/* ----header---- */
-/* header {
-	background-color: black;
-	color: white;
-	display: flex;
-	align-items: center;
-	height: 120px;
-	margin-bottom: 0px;
-}
-
-.header-logo {
-	padding-left: 70px;
-	font-family: "Sarpanch";
-	font-size: 45px;
-}
-
-.header-link {
-	font-family: "Roboto";
-	font-size: 25px;
-	margin-left: 80%; 
-	text-decoration: none;
-}
-
-.header-link:hover {
-	color: black;
-	background-color: white;
-} */
-
 header h1 {
     font-family: sarpanch;
     font-size: 2rem;
@@ -97,6 +69,7 @@ main {
 }
 
 .form input {
+    background-color: white;
     height: 2rem;
     color: black;
     width: 100%;
