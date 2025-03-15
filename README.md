@@ -1,4 +1,4 @@
-# Pixel Cloud V1.0.5: "Commodus"
+# Pixel Cloud V1.0.5: "Pertinax"
 
 **Murilo Maciel Rodrigues**  
 **Felipe Oliveira Raimundo**  
@@ -15,6 +15,6 @@
 ## **Etapa 2:**
 - Regexp ❌
 - Requisição Assíncrona ❌
-- Back-end com DBaaS (Supabase) ➖
+- Back-end com DBaaS (Supabase) ✅
 - Componentes ReactJS ➖
 - Gerência de estado entre Componentes ❌
