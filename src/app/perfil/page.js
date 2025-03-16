@@ -1,9 +1,24 @@
+"use client"; // Garante que esse componente só rode no lado do cliente
+import { useEffect, useState } from "react";
 import "@/app/perfil/profile.css"
 import header from '@/components/header'
 import footer from '@/components/footer'
 
-function perfil(user){
-    return (
+function perfil(){
+    const [user, setUser] = useState(null);
+    useEffect(() => {
+        let userInstance = localStorage.getItem('user')
+        
+        if (userInstance){
+            setUser(JSON.parse(localStorage.getItem(userInstance)))
+        }
+    },[])
+    
+    if (!user) {
+        return <p>Carregando usuário...</p>;
+      }
+    
+      return (
         <div>
             {header()}
 
@@ -28,14 +43,16 @@ function perfil(user){
                     className="block w-full rounded bg-red-600 p-4 text-sm font-medium transition hover:scale-105"
                     style={{ width: '10rem', marginLeft: '45%' }}
                     id="quit"
+                    onClick={() => {localStorage.setItem('user', 'none'); window.location.href= '/login'}}
                     >
                     Sair da Conta <i className="fa-solid fa-right-from-bracket"></i>
                     </button>
                 </section>
             </main>
-
             {footer()}
         </div>
+
+        
     )
 }
 
