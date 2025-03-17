@@ -1,8 +1,10 @@
 # Pixel Cloud V1.1.5: "Pertinax"
 
 **Murilo Maciel Rodrigues**  
-**Felipe Oliveira Raimundo**
-**Clodoaldo Tang**    
+
+**Felipe Oliveira Raimundo**  
+
+**Clodoaldo Tang**
 
 ---
 
