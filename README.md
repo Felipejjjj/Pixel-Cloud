@@ -1,4 +1,4 @@
-# Pixel Cloud V1.1.5: "Pertinax"
+# Pixel Cloud V1.4: "Constantinus I"
 
 **Murilo Maciel Rodrigues**  
 
@@ -16,8 +16,8 @@
 - Páginas dinâmicas com dados no LocalStorage ✅
 
 ## **Etapa 2:**
-- Regexp ❌
+- Regexp ✅
 - Requisição Assíncrona ❌
 - Back-end com DBaaS (Supabase) ✅
-- Componentes ReactJS ➖
-- Gerência de estado entre Componentes ❌
+- Componentes ReactJS ✅
+- Gerência de estado entre Componentes ✅

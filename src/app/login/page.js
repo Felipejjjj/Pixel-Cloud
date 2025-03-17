@@ -9,15 +9,11 @@ function LoginCadastro(){
   useEffect(() => {
     function verificacao(input, index) {
       let mensagemErro = '';
-      const verificacao_vazio = '.+'
-      const verificacao_ano = '^(19[0-9]{2}|20[01][0-9]|2020)-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$'
-      const verificacao_senha = '^(?=.*[A-Za-z])(?=.*\d).{8,}$'
+      const verificacao_vazio = /.+/
+      const verificacao_ano = /^(19[0-9]{2}|20[01][0-9]|2020)-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/
+      const verificacao_senha = /^(?=.*[A-Za-z])(?=.*\d).{8,}$/
       
       //erro de campo vazio
-      // if(input.value === ''){
-      //     mensagemErro = 'este campo é obrigatório';
-      //     error = true
-      // }
       if(!verificacao_vazio.test(input.value)){
         mensagemErro = 'este campo é obrigatório';
         error = true
@@ -26,12 +22,6 @@ function LoginCadastro(){
       //erro de data
       if(index === inputs.length - 5){
           const data = new Date(input.value);
-          // const ano = data.getFullYear();
-              
-          // if (ano < 1900 || ano > 2020) {
-          //     mensagemErro = 'data de nascimento inválida';
-          //     error = true
-          // }
 
           if(!verificacao_ano.test(data)){
             mensagemErro = 'data de nascimento inválida';
@@ -48,7 +38,7 @@ function LoginCadastro(){
       //erro de senha fraca
       if(index === inputs.length - 1){
         if(!verificacao_senha.test(input.value)){
-          mensagemErro = 'senha fraca (as senhas devem ter 8 caracteres, e contar com números e letras';
+          mensagemErro = 'senha fraca (as senhas devem ter 8 caracteres, e contar com números e letras)';
           error = true
         }
 
@@ -164,9 +154,9 @@ function LoginCadastro(){
               <p id="err6"></p> <br />
               <input id="email" type="text" placeholder="digite seu E-MAIL" />
               <p id="err7"></p> <br />
-              <input type="password" placeholder="digite uma senha" maxLength="6" />
+              <input type="password" placeholder="digite uma senha" maxLength="20" />
               <p id="err8"></p> <br />
-              <input id="senha" type="password" placeholder="confirme sua senha" maxLength="6" />
+              <input id="senha" type="password" placeholder="confirme sua senha" maxLength="20" />
               <p id="err9"></p> <br />
               {/* <button type="submit">CRIAR CONTA</button> */}
             </form>
