@@ -9,21 +9,33 @@ function LoginCadastro(){
   useEffect(() => {
     function verificacao(input, index) {
       let mensagemErro = '';
+      const verificacao_vazio = '.+'
+      const verificacao_ano = '^(19[0-9]{2}|20[01][0-9]|2020)-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$'
+      const verificacao_senha = '^(?=.*[A-Za-z])(?=.*\d).{8,}$'
       
       //erro de campo vazio
-      if(input.value === ''){
-          mensagemErro = 'este campo é obrigatório';
-          error = true
-      }
+      // if(input.value === ''){
+      //     mensagemErro = 'este campo é obrigatório';
+      //     error = true
+      // }
+      if(!verificacao_vazio.test(input.value)){
+        mensagemErro = 'este campo é obrigatório';
+        error = true
+    }
   
       //erro de data
       if(index === inputs.length - 5){
           const data = new Date(input.value);
-          const ano = data.getFullYear();
+          // const ano = data.getFullYear();
               
-          if (ano < 1900 || ano > 2020) {
-              mensagemErro = 'data de nascimento inválida';
-              error = true
+          // if (ano < 1900 || ano > 2020) {
+          //     mensagemErro = 'data de nascimento inválida';
+          //     error = true
+          // }
+
+          if(!verificacao_ano.test(data)){
+            mensagemErro = 'data de nascimento inválida';
+            error = true
           } 
       }
       
@@ -32,6 +44,15 @@ function LoginCadastro(){
           mensagemErro = 'as senhas são diferentes';
           error = true
       }
+
+      //erro de senha fraca
+      if(index === inputs.length - 1){
+        if(!verificacao_senha.test(input.value)){
+          mensagemErro = 'senha fraca (as senhas devem ter 8 caracteres, e contar com números e letras';
+          error = true
+        }
+
+    }
       
       return mensagemErro
     }
