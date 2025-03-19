@@ -15,7 +15,7 @@ function perfil(){
     },[])
     
     if (!user) {
-        return <p>Carregando usuário...</p>;
+        return <p>Redirecione para a página de Login...</p>;
       }
     
       return (
