@@ -17,7 +17,7 @@
 
 ## **Etapa 2:**
 - Regexp ✅
-- Requisição Assíncrona ❌
+- Requisição Assíncrona ➖
 - Back-end com DBaaS (Supabase) ✅
 - Componentes ReactJS ✅
 - Gerência de estado entre Componentes ✅

@@ -1,8 +1,26 @@
 import '@/app/styles.css'
 import header from '@/components/header'
 import footer from '@/components/footer'
+import newsCard from '@/components/newsCard'
+import reviewCard  from '@/components/reviewCard'
 
-export default function Home() {
+import supabase from '@/lib/supabase'
+
+export default async function Home() {
+  //Fazendo a requisição ao Supabase diretamente no componente servidor
+  const { data:news, error } = await supabase
+    .from('news')  // Substitua pelo nome da sua tabela
+    .select('*');  // Seleciona todas as colunas
+  
+  const { data: reviews, error: gameError } = await supabase
+  .from("review") // Substitua pelo nome da sua tabela
+  .select("*");
+
+  if (error || gameError) {
+    console.error('Erro ao buscar dados:', error);
+    return <div>Erro ao carregar dados</div>;
+  }
+
   return (
     <div>
       {header()}
@@ -16,11 +34,19 @@ export default function Home() {
           <img src="controle3.png" alt="Controle de videogame" />
         </article>
 
+        {/* <h1>Dados do Supabase</h1> */}
+        {/* <pre>{JSON.stringify(news, null, 2)}</pre> */}
+
         <article className="article" id="games">
           <h1>JOGOS</h1>
           <hr /> <br />
           <div id="games-container">
             {/* elemento dinâmico para cards dos jogos */}
+            {/* {data.map( (news) => <newsCard key={news.id} {...news} />)} */}
+            <div> 
+              {/* {data.map((review, index) => (newsCard(review, index)))} */}
+              {reviews.map((review, index) => (reviewCard(review, index)))}
+            </div>
           </div>
         </article>
 
@@ -31,6 +57,10 @@ export default function Home() {
           <hr /> <br />
           <div id="news-container">
             {/* elemento dinâmico para cards de notícias */}
+            <div> 
+              {/* {data.map((review, index) => (newsCard(review, index)))} */}
+              {news.map((review, index) => (newsCard(review, index)))}
+            </div>
           </div>
         </article>
 
