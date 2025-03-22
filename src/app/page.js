@@ -3,18 +3,17 @@ import header from '@/components/header'
 import footer from '@/components/footer'
 import newsCard from '@/components/newsCard'
 import reviewCard  from '@/components/reviewCard'
-
 import supabase from '@/lib/supabase'
 
 export default async function Home() {
   //Fazendo a requisição ao Supabase diretamente no componente servidor
   const { data:news, error } = await supabase
-    .from('news')  // Substitua pelo nome da sua tabela
-    .select('*');  // Seleciona todas as colunas
+    .from('news')  
+    .select('*');
   
   const { data: reviews, error: gameError } = await supabase
-  .from("review") // Substitua pelo nome da sua tabela
-  .select("*");
+    .from("review")
+    .select("*");
 
   if (error || gameError) {
     console.error('Erro ao buscar dados:', error);
@@ -34,17 +33,12 @@ export default async function Home() {
           <img src="controle3.png" alt="Controle de videogame" />
         </article>
 
-        {/* <h1>Dados do Supabase</h1> */}
-        {/* <pre>{JSON.stringify(news, null, 2)}</pre> */}
-
         <article className="article" id="games">
           <h1>JOGOS</h1>
           <hr /> <br />
           <div id="games-container">
-            {/* elemento dinâmico para cards dos jogos */}
-            {/* {data.map( (news) => <newsCard key={news.id} {...news} />)} */}
+            {/* puxando os reviews da API do supabase */}
             <div> 
-              {/* {data.map((review, index) => (newsCard(review, index)))} */}
               {reviews.map((review, index) => (reviewCard(review, index)))}
             </div>
           </div>
@@ -56,10 +50,9 @@ export default async function Home() {
           <h1>Últimas notícias</h1>
           <hr /> <br />
           <div id="news-container">
-            {/* elemento dinâmico para cards de notícias */}
+            {/* puxando as noticias da API do supabase */}
             <div> 
-              {/* {data.map((review, index) => (newsCard(review, index)))} */}
-              {news.map((review, index) => (newsCard(review, index)))}
+              {news.map((news, index) => (newsCard(news, index)))}
             </div>
           </div>
         </article>
